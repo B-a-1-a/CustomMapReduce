@@ -10,7 +10,7 @@ This is my implementation plan for the MapReduce project. It covers the `design.
 >
 > Go just makes more sense for this:
 >
->   * **Concurrency:** **Goroutines** are perfect for this and way easier to manage than threads. I can spin up goroutines to manage workers, tasks, and heartbeats without a headache.
+>   * **Concurrency:** **Goroutines** are perfect for this and way easier to manage than threads. I can spin up goroutines to manage workers, tasks, and heartbeats.
 >   * **Garbage Collection:** I can focus on the system's logic (scheduling, data flow) instead of worrying about manual memory management.
 >   * **Standard Library:** The `net/http` and `net/rpc` (or gRPC) packages are built for this kind of distributed system.
 >   * **Simplicity:** Go compiles to a single static binary, which will make building the Docker images super simple and clean.
